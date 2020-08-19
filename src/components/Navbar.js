@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { useState } from 'react';
 import {
-  NavLink
+  NavLink,
+  useRouteMatch
 } from 'react-router-dom';
 import { jsx, css } from '@emotion/core';
 
 function Navbar() {
+  const { url } = useRouteMatch();
   const [isNavVisible, setNavVisibility] = useState(false);
 
   const styles = css`
@@ -112,16 +114,16 @@ function Navbar() {
           <a href="" onClick={() => setNavVisibility(prevVisibility => !prevVisibility)}>×</a>
         </li>
         <li>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to={`${url}/home`}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/news">News</NavLink> 
+          <NavLink to={`${url}/news`}>News</NavLink> 
         </li>
         <li>
-          <NavLink to="/about">About</NavLink> 
+          <NavLink to={`${url}/about`}>About</NavLink> 
         </li>
         <li className="float-right">
-          <NavLink to="/login">Login</NavLink> 
+          <NavLink to={`${url}/login`}>Login</NavLink> 
         </li>
       </ul>
       <div className="nav-icon" onClick={() => setNavVisibility(prevVisibility => !prevVisibility)}>

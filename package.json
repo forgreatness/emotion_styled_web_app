@@ -11,9 +11,12 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "^3.4.3"
   },
+  "homepage": "https://forgreatness.github.io/emotion_styled_web_app",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

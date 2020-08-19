@@ -4,7 +4,8 @@ import { Global, jsx, css } from '@emotion/core';
 import {
   Switch,
   Route,
-  Redirect
+  Redirect,
+  useRouteMatch
 } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
@@ -26,6 +27,8 @@ const globalStyles = css`
 `;
 
 function App() {
+  const { path } = useRouteMatch();
+
   const styles = {
     padding: '0px 10px'
   };
@@ -36,20 +39,20 @@ function App() {
       <Navbar />
       <main>
         <Switch>
-          <Route path="/home">
+          <Route path={`${path}/home`}>
             <Home css={styles}/>
           </Route>
-          <Route path="/news">
+          <Route path={`${path}/news`}>
             <News css={styles}/>
           </Route>
-          <Route path="/about">
+          <Route path={`${path}/about`}>
             <About css={styles}/>
           </Route>
-          <Route path="/login">
+          <Route path={`${path}/login`}>
             <Login css={styles}/>
           </Route>
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path={path}>
+            <Redirect to={`${path}/home`} />
           </Route>
           <Route path="*">
             <div>404 - Page Not Found</div>

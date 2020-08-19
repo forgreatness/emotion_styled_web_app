@@ -50,6 +50,23 @@ For your responsively-styled app, note the following:
 
   * Again, you don't have to exactly match the styling depicted above, but however you style the app, it should look clean and polished.
 
+## Project Demo
+<div float="left">
+    <img title="Main Layout" src="./demo_images/main1.png" width="800" height="597"/>
+</div>
+<div float="left">
+    <img title="Main Layout" src="./demo_images/main2.png" width="800" height="597"/>
+</div>
+<div float="left">
+    <img title="Main Layout" src="./demo_images/main3.png" width="800" height="597"/>
+</div>
+
+Or go to https://forgreatness.github.io/emotion_styled_web_app to visit the app hosted by git pages.  
+
+## Authors
+
+* **Danh Nguyen** - *Initial work* - [forgreatness](https://github.com/forgreatness)
+
 ## Extra credit
 
 For extra credit, you can add functionality to your application to allow the user to switch between a "light" theme and a "dark" theme.  This will involve writing styles for both themes and then adding a button or some other interactive mechanism (which should have polished styling) in the navbar that toggles between the themes.  It should be possible to toggle themes in both full-screen and small-screen modes of the app.
