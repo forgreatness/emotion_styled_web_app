@@ -1,7 +1,4 @@
-# Assignment 3
-
-**Assignment due at 11:59pm on Monday, 2/17/2020**<br>
-**Grading demo due by 11:59pm on Monday 3/9/2020**
+# Emotion Styled Web App
 
 The goal of this assignment is to use Emotion to style an application.  You'll also get a little more practice with React Router.
 
@@ -58,18 +55,3 @@ For your responsively-styled app, note the following:
 For extra credit, you can add functionality to your application to allow the user to switch between a "light" theme and a "dark" theme.  This will involve writing styles for both themes and then adding a button or some other interactive mechanism (which should have polished styling) in the navbar that toggles between the themes.  It should be possible to toggle themes in both full-screen and small-screen modes of the app.
 
 All components, including `Navbar`, `Article`, etc., should have their appearance modified by a theme change.  To make it easier to propagate changes across all the app's components, you should use [React's context functionality](https://reactjs.org/docs/context.html).  Use [the `useContext()` hook](https://reactjs.org/docs/hooks-reference.html#usecontext) to incorporate context into function components.
-
-## Assignment submission
-
-We'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub.  Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom.  A good way to check whether your files are safely submitted is to look at the master branch your assignment repo on the github.com website (i.e. https://github.com/osu-cs419-w20/assignment-3-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Assignment grading
-
-This assignment is worth 10 points total.  You can also earn 1 point of extra credit as described above.
-
-Remember that in this course, programming assignments will be graded based on effort instead of correctness, and you will get full credit for an assignment if it is submitted on time and is clearly the product of a determined effort to solve the problem.  Again, If you’re unable to solve the homework problem, make sure to submit all code you’ve written, and then describe in comments in the source code the following three things:
-  1. How you attempted to solve the problem.
-  2. Where you ran into trouble.
-  3. What options you think (conceptually) might lead to a working solution.
-
-Note, however, that to earn extra credit for the assignment, the extra credit features must work correctly.  In other words, the extra credit will be graded based on correctness, not just effort.
