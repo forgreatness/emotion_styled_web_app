@@ -4,9 +4,9 @@ import Article from '../components/Article';
 
 import news from '../data/news.json';
 
-function News() {
+function News(props) {
   return (
-    <div>
+    <div {...props}>
       <h1>News</h1>
       <div>
         {news.map((newsItem, i) => <Article key={i} {...newsItem} />)}

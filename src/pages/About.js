@@ -1,8 +1,8 @@
 import React from 'react';
 
-function About() {
+function About(props) {
   return (
-    <div>
+    <div {...props}>
       <h1>About</h1>
     </div>
   );
