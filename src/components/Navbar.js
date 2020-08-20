@@ -94,7 +94,7 @@ function Navbar() {
         overflow: hidden;
       }
 
-      ul li.close-nav-button a {
+      ul li.close-nav-button button {
         display: inline;
         float: right;
         color: black;
@@ -111,7 +111,7 @@ function Navbar() {
     <nav css={styles}>
       <ul>
         <li className="close-nav-button">
-          <a href="" onClick={() => setNavVisibility(prevVisibility => !prevVisibility)}>×</a>
+          <button onClick={() => setNavVisibility(prevVisibility => !prevVisibility)}>×</button>
         </li>
         <li>
           <NavLink to={`${url}/home`}>Home</NavLink>
